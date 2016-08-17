@@ -1,6 +1,6 @@
 Provides a simple parsing of the output of dmidecode to JSON. 
 
-Just include the .inc.php file and call dmi2json(), it will return a JSON array. 
+Just include the .inc.php file and call dmiJson(), it will return a JSON array. 
 Note that dmidecode typically needs root access to run, so the exec is wrapped with sudo -n.
 
 dmidecode output like this:
