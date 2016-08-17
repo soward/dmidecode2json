@@ -4,7 +4,7 @@ Just include the .inc.php file and call dmi2json(), it will return a JSON array.
 Note that dmidecode typically needs root access to run, so the exec is wrapped with sudo -n.
 
 dmidecode output like this:
-
+```
 # dmidecode 3.0
 Getting SMBIOS data from sysfs.
 SMBIOS 2.8 present.
@@ -38,10 +38,11 @@ BIOS Information
                 Targeted content distribution is supported
                 UEFI is supported
         BIOS Revision: 5.6
-
+```
 
 will turn into JSON that looks like this:
 
+```
 Array
 (
     [BIOS Information] => Array
@@ -101,3 +102,4 @@ Array
 
         )
 )
+```
